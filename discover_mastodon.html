@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Centre d'aide de Mastoot.fr</title>
+	<link href="/packs/media/icons/favicon-16x16-c58fdef40ced38d582d5b8eed9d15c5a.png" rel="icon" sizes="16x16" type="image/png">
+	<link href="/packs/media/icons/favicon-32x32-249409a6d9f300112c51af514d863112.png" rel="icon" sizes="32x32" type="image/png">
+	<link href="/packs/media/icons/favicon-48x48-c1197e9664ee6476d2715a1c4293bf61.png" rel="icon" sizes="48x48" type="image/png">
+	<link href="/packs/media/icons/apple-touch-icon-57x57-c9dca808280860c51d0357f6a3350f4d.png" rel="apple-touch-icon" sizes="57x57">
+	<link href="/packs/media/icons/apple-touch-icon-60x60-bb247db195d9ee9d8c687b2b048508d9.png" rel="apple-touch-icon" sizes="60x60">
+	<link href="/packs/media/icons/apple-touch-icon-72x72-799d90b81f5b28cea7355a0c0b356381.png" rel="apple-touch-icon" sizes="72x72">
+	<link href="/packs/media/icons/apple-touch-icon-76x76-015d73d770413d121873193153ae4ab5.png" rel="apple-touch-icon" sizes="76x76">
+	<link href="/packs/media/icons/apple-touch-icon-114x114-211e68807b8d15707666a8d326d338b1.png" rel="apple-touch-icon" sizes="114x114">
+	<link href="/packs/media/icons/apple-touch-icon-120x120-4c4e647d758bf1b2f47a53e2165a01d2.png" rel="apple-touch-icon" sizes="120x120">
+	<link href="/packs/media/icons/apple-touch-icon-144x144-ff3110f7772743bdd0c1c47fb7b2d4e0.png" rel="apple-touch-icon" sizes="144x144">
+	<link href="/packs/media/icons/apple-touch-icon-152x152-b12cbb1baaf4a6111d0efd391fd829c9.png" rel="apple-touch-icon" sizes="152x152">
+	<link href="/packs/media/icons/apple-touch-icon-167x167-6f21a68f6a05a8b5cf25b1729e553728.png" rel="apple-touch-icon" sizes="167x167">
+	<link href="/packs/media/icons/apple-touch-icon-180x180-a75559a0af48064c1b7c71b81f3bf7c6.png" rel="apple-touch-icon" sizes="180x180">
+	<link href="/packs/media/icons/apple-touch-icon-1024x1024-db6849588b44f525363c37b65ef0ac66.png" rel="apple-touch-icon" sizes="1024x1024">
+	<link color="#6364FF" href="/packs/media/images/logo-symbol-icon-de9e68dc49b19eb5cd142d3316f9e95e.svg" rel="mask-icon">
+	<link href="/packs/css/application.css" rel="stylesheet"> <!-- Import du CSS par défaut de Mastodon -->
+	<style>
+		/* Styles personnalisés pour la page */
+		body {
+			background-color: #191b22; /* Couleur de fond par défaut de Mastodon */
+			color: #ffffff; /* Texte blanc */
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 50px auto;
+			padding: 20px;
+			background-color: #2b303b; /* Couleur du fond des boîtes Mastodon */
+			border-radius: 10px;
+			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+		}
+
+		.logo {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		.logo img {
+			max-width: 150px;
+		}
+
+		.return-home {
+			display: flex;
+			background-color: #5a47dc36;
+			color: #8c8dff;
+			text-decoration: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			font-size: 16px;
+			font-weight: bold;
+			text-align: center;
+			margin: 10px auto;
+			width: fit-content;
+			grid-gap: 5px;
+		}
+
+		.return-home svg, .return-home span {
+			color: #8c8dff;
+			fill: #8c8dff;
+		}
+
+		.return-home:hover {
+			color: #FFFFFF;
+			background-color: #5a47dc;
+		}
+
+		.return-home:hover svg, .return-home:hover span {
+			color: #FFFFFF;
+			fill: #FFFFFF;
+		}
+
+		.content {
+			margin-top: 20px;
+		}
+
+		.content h1 {
+			text-align: center;
+		}
+
+		.content ul li span img {
+			width: 25px;
+			height: 25px;
+			border-radius: 100%;
+		}
+		.content ul li, .content ul li span {
+			display: flex;
+			align-items: center;
+			grid-gap: 10px;
+			margin-bottom: 5px;
+		}
+
+		.content a {
+			color: #8c8dff;
+			font-weight: 400;
+			text-decoration: none;
+		}
+
+		.content a:hover {
+			text-decoration: underline;
+		}
+
+		.content {
+			display: grid;
+		}
+
+		.content div.cards {
+			position: relative;
+			text-align: center;
+			color: #FFF;
+			border: 1px solid #21212e;
+			border-radius: 12px;
+			padding: 20px;
+		}
+
+		.img_wrap {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		.img_wrap img {
+			max-width: 100%;
+		}
+
+		span.color {
+			font-size: xx-large;
+			margin-top: -12px;
+			margin-right: 5px;
+		}
+	</style>
+</head>
+<body style="padding: 0 25px;">
+	<div class="container" style="position: relative;">
+		<div class="logo">
+			<img width="100%" src="https://joinmastodon.org/_next/static/media/wordmark-white-text.01e9f493.svg">
+		</div>
+		<a href="index.html" class="return-home">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M14 8a.75.75 0 0 1-.75.75H4.56l3.22 3.22a.75.75 0 1 1-1.06 1.06l-4.5-4.5a.75.75 0 0 1 0-1.06l4.5-4.5a.75.75 0 0 1 1.06 1.06L4.56 7.25h8.69A.75.75 0 0 1 14 8" clip-rule="evenodd"/></svg>
+			<span style="display: flex; align-items: center; justify-content: center; margin-top: 3px;">RETOUR</span>
+		</a>
+		<div style="position: relative;width: 100%;">
+			<h1 style="font-size: 4em;text-align: center;margin-bottom: 0;">Centre d'aide</h1>
+			<h2 style="font-size: 1.8em;text-align: center;margin-bottom: 0;">Découvrir Mastodon</h2>
+			<p style="font-size: 0.7em;text-align: center;">Publier, liker, repartager, épingler, message privé, qu'est-ce que le fediverse etc.</p>
+			<hr>
+		</div>
+
+		<div class="content">
+			<div class="cards">
+				<h3>Comprendre une publication</h3>
+			</div>
+			<div>
+				<h3>Quels sont les éléments clefs à retenir sur une publication ?</h3>
+				<div class="img_wrap">
+					<p>Voici une publication publique provenant de <a href="https://mastoot.fr/@StefOfficiel/113924680117795943" target="new">@stefofficiel@mastoot.fr</a></p>
+					<img src="post1.png">
+				</div>
+				<div style="display: flex;flex-direction: column;grid-gap: 5px;">
+					<p style="font-weight: bold;">Explication en couleurs :</p>
+					<p style="margin-top: 0;display: flex;">
+						<span class="color" style="color: #cc009f;">■</span>
+						<span>"ALT" correspond au "ALT-Text" c'est à dire au texte alternatif qui décrit l'image ou met de façon textuel un contenu texte dans une image. Pour quoi faire ? Pour les personnes ayant une déficiance visuelle, ça leur permet de comprendre l'image, mais aussi pour l'outil de traduction, pour qu'une personne ne parlant pas votre langue puisse tout de même comprendre.</span>
+					</p>
+					<p style="margin-top: 0;display: flex;">
+						<span class="color" style="color: #0015cc;">■</span>
+						<span>En premier, la date et l'heure de publication. Ensuite, la petite terre signifie que le Toot est publique (nous y reviendrons plus tard), ici "Moshidon" c'est l'application utilisé pour publier ce Toot, il peut être "Web" quand c'est fait depuis le navigateur mais aussi "Mastodon Android" ou "Mastodon iOS" qui sont les applications officielles. En dessous vous trouverez la date de la dernière modification et en cliquant dessus, vous pouvez voir ce qui a été modifié.</span>
+					</p>
+					<p style="margin-top: 0;display: flex;">
+						<span class="color" style="color: #08cc00;">■</span>
+						<span>Les "boosts" sont les repartages, aussi appelé ReToot (les fameux RT comme les ReTweet sur 𝕏). À côté, le nombre de fav qu'a reçu cette publication.</span>
+					</p>
+					<p style="margin-top: 0;display: flex;">
+						<span class="color" style="color: #cc0000;">■</span>
+						<span>De gauche à droite : "Répondre" | "ReToot" | "Fav" | "Épingler" | "Plus d'options"</span>
+					</p>
+				</div>
+				<h3>Voyons en détail :</h3>
+				<div class="img_wrap">
+					<p>Explications de la barre d'interraction</p>
+					<img src="post2.png">
+				</div>
+				<div style="display: flex;flex-direction: column;grid-gap: 5px;">
+					<p style="font-weight: bold;">Explication en couleurs :</p>
+					<p style="margin-top: 0;display: flex;">
+						<span class="color" style="color: #ff7800;">■</span>
+						<span>En cliquant sur cette flèche (qui peut être une double flèche) ça vous permet de répondre à ce Toot.</span>
+					</p>
+					<p style="margin-top: 0;display: flex;">
+						<span class="color" style="color: #e01b24;">■</span>
+						<span>En cliquant sur ces double flèches, ça repartage ce Toot dans votre fil et le montre à vos followers. Attention, si le message n'est pas public, il sera visible dans votre fil par vos followers qui suivent aussi cette personne.</span>
+					</p>
+					<p style="margin-top: 0;display: flex;">
+						<span class="color" style="color: #f6d32d;">■</span>
+						<span>En cliquant sur l'étoile, ça mettra le message en favoris, en "fav" c'est un peu le "j'aime" de Facebook.</span>
+					</p>
+					<p style="margin-top: 0;display: flex;">
+						<span class="color" style="color: #33d17a;">■</span>
+						<span>En cliquant sur ce bouton, ça placera ce Toot dans vos messages épinglés pour que vous puissiez le retrouver plus tard, ce n'est visible que pour vous.</span>
+					</p>
+					<p style="margin-top: 0;display: flex;">
+						<span class="color" style="color: #3584e4;">■</span>
+						<span>Les trois points offrent plus d'option comme le signalement, le blocage et d'autres.</span>
+					</p>
+				</div>
+
+				<div class="img_wrap" style="flex-direction: row;justify-content: center;grid-gap: 10px;">
+					<div>
+						<p>Signaler quelqu'un</p>
+						<img src="harassment1.png">
+					</div>
+					<div>
+						<p>Bloquer quelqu'un</p>
+						<img src="harassment2.png">
+					</div>
+				</div>
+
+				<br>
+				<p><small><i><u>Note :</u> N'hésitez pas à essayer de cliquer un peu partout, vous ne risquez pas de tout casser</i> 😉</small></p>
+				<div class="img_wrap">
+					<p>En vidéo</p>
+					<video src="video4.mp4" style="width: 100%;" controls></video>
+					<video src="video2.mp4" style="width: 100%;" controls></video>
+				</div>
+				<br>
+				<h3>Super ! Allons un peu plus loin :</h3>
+				<div class="img_wrap">
+					<p>Une autre vidéo pour vous montrer les différentes interractions pour publier ainsi que l'ajout du ALT-Text.</p>
+					<video src="video5.mp4" style="width: 100%;" controls></video>
+				</div>
+				<h3>Et enfin :</h3>
+				<div class="img_wrap">
+					<p>Une dernière vidéo pour vous montrer comment trouver du contenu d'une autre instance sur Mastoot.fr.</p>
+					<video src="video3.mp4" style="width: 100%;" controls></video>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

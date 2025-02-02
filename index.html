@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Centre d'aide de Mastoot.fr</title>
+	<link href="/packs/media/icons/favicon-16x16-c58fdef40ced38d582d5b8eed9d15c5a.png" rel="icon" sizes="16x16" type="image/png">
+	<link href="/packs/media/icons/favicon-32x32-249409a6d9f300112c51af514d863112.png" rel="icon" sizes="32x32" type="image/png">
+	<link href="/packs/media/icons/favicon-48x48-c1197e9664ee6476d2715a1c4293bf61.png" rel="icon" sizes="48x48" type="image/png">
+	<link href="/packs/media/icons/apple-touch-icon-57x57-c9dca808280860c51d0357f6a3350f4d.png" rel="apple-touch-icon" sizes="57x57">
+	<link href="/packs/media/icons/apple-touch-icon-60x60-bb247db195d9ee9d8c687b2b048508d9.png" rel="apple-touch-icon" sizes="60x60">
+	<link href="/packs/media/icons/apple-touch-icon-72x72-799d90b81f5b28cea7355a0c0b356381.png" rel="apple-touch-icon" sizes="72x72">
+	<link href="/packs/media/icons/apple-touch-icon-76x76-015d73d770413d121873193153ae4ab5.png" rel="apple-touch-icon" sizes="76x76">
+	<link href="/packs/media/icons/apple-touch-icon-114x114-211e68807b8d15707666a8d326d338b1.png" rel="apple-touch-icon" sizes="114x114">
+	<link href="/packs/media/icons/apple-touch-icon-120x120-4c4e647d758bf1b2f47a53e2165a01d2.png" rel="apple-touch-icon" sizes="120x120">
+	<link href="/packs/media/icons/apple-touch-icon-144x144-ff3110f7772743bdd0c1c47fb7b2d4e0.png" rel="apple-touch-icon" sizes="144x144">
+	<link href="/packs/media/icons/apple-touch-icon-152x152-b12cbb1baaf4a6111d0efd391fd829c9.png" rel="apple-touch-icon" sizes="152x152">
+	<link href="/packs/media/icons/apple-touch-icon-167x167-6f21a68f6a05a8b5cf25b1729e553728.png" rel="apple-touch-icon" sizes="167x167">
+	<link href="/packs/media/icons/apple-touch-icon-180x180-a75559a0af48064c1b7c71b81f3bf7c6.png" rel="apple-touch-icon" sizes="180x180">
+	<link href="/packs/media/icons/apple-touch-icon-1024x1024-db6849588b44f525363c37b65ef0ac66.png" rel="apple-touch-icon" sizes="1024x1024">
+	<link color="#6364FF" href="/packs/media/images/logo-symbol-icon-de9e68dc49b19eb5cd142d3316f9e95e.svg" rel="mask-icon">
+	<link href="/packs/css/application.css" rel="stylesheet"> <!-- Import du CSS par défaut de Mastodon -->
+	<style>
+		/* Styles personnalisés pour la page */
+		body {
+			background-color: #191b22; /* Couleur de fond par défaut de Mastodon */
+			color: #ffffff; /* Texte blanc */
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 50px auto;
+			padding: 20px;
+			background-color: #2b303b; /* Couleur du fond des boîtes Mastodon */
+			border-radius: 10px;
+			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+		}
+
+		.logo {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		.logo img {
+			max-width: 150px;
+		}
+
+		.return-home {
+			display: flex;
+			background-color: #5a47dc36;
+			color: #8c8dff;
+			text-decoration: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			font-size: 16px;
+			font-weight: bold;
+			text-align: center;
+			margin: 10px auto;
+			width: fit-content;
+			grid-gap: 5px;
+		}
+
+		.return-home svg, .return-home span {
+			color: #8c8dff;
+			fill: #8c8dff;
+		}
+
+		.return-home:hover {
+			color: #FFFFFF;
+			background-color: #5a47dc;
+		}
+
+		.return-home:hover svg, .return-home:hover span {
+			color: #FFFFFF;
+			fill: #FFFFFF;
+		}
+
+		.content {
+			margin-top: 20px;
+		}
+
+		.content h1 {
+			text-align: center;
+		}
+
+		.content ul li span img {
+			width: 25px;
+			height: 25px;
+			border-radius: 100%;
+		}
+		.content ul li, .content ul li span {
+			display: flex;
+			align-items: center;
+			grid-gap: 10px;
+			margin-bottom: 5px;
+		}
+
+		.content a {
+			color: #8c8dff;
+			font-weight: 400;
+			text-decoration: none;
+		}
+
+		.content a:hover {
+			text-decoration: underline;
+		}
+
+		.content {
+			display: grid;
+			grid-template-columns: repeat(4, calc(25% - 20px));
+			grid-gap: 20px;
+			justify-content: center;
+		}
+
+		@media screen and (max-width: 1022px) {
+			.content {
+				grid-template-columns: repeat(3, calc(33% - 20px));
+			}
+		}
+
+		@media screen and (max-width: 920px) {
+			.content {
+				grid-template-columns: repeat(2, calc(50% - 20px));
+			}
+		}
+
+		@media screen and (max-width: 620px) {
+			.content {
+				grid-template-columns: repeat(1, calc(100% - 20px));
+			}
+		}
+
+		.content a.cards {
+			text-decoration: none;
+			position: relative;
+			color: #FFF;
+			height: 165px;
+			border: 1px solid #21212e;
+			border-radius: 12px;
+			padding: 20px;
+		}
+
+		.content a.cards:hover h2 {
+			text-decoration: underline;
+		}
+
+		.content a.cards span.icon {
+			position: absolute;
+			color: #ffffff05;
+			left: 0;
+			bottom: 0;
+		}
+
+		.content a.cards span.desc {
+			font-size: 10px;
+			position: absolute;
+			top: 160px;
+			left: 65px;
+			padding-right: 15px;
+		}
+	</style>
+</head>
+<body style="padding: 0 25px;">
+	<div class="container" style="position: relative;">
+		<div class="logo">
+			<img width="100%" src="https://joinmastodon.org/_next/static/media/wordmark-white-text.01e9f493.svg">
+		</div>
+		<a href="/" class="return-home">
+			<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="icon icon-home column-link__icon" aria-hidden="true"><path d="M160-120v-480l320-240 320 240v480H560v-280H400v280H160Z"></path></svg>
+			<span style="display: flex; align-items: center; justify-content: center; margin-top: 3px;">Retour à l'accueil</span>
+		</a>
+		<div style="position: relative;width: 100%;">
+			<h1 style="font-size: 4em;text-align: center;">Centre d'aide</h1>
+			<hr>
+		</div>
+
+		<div class="content">
+			<a href="harassment.html" class="cards">
+				<h2>Victime ou témoin de harcèlement</h2>
+				<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24"><path fill="currentColor" d="M9.93 14.6L12 13l2.02 1.562l-.782-2.516l2.147-1.661H12.83L12 7.83l-.83 2.554H8.614l2.097 1.661L9.93 14.6ZM12 20.962q-3.013-.895-5.007-3.651Q5 14.554 5 11.1V5.692l7-2.615l7 2.615V11.1q0 3.454-1.993 6.21q-1.994 2.757-5.007 3.652Zm0-1.062q2.6-.825 4.3-3.3t1.7-5.5V6.375l-6-2.23l-6 2.23V11.1q0 3.025 1.7 5.5t4.3 3.3Zm0-7.88Z"/></svg></span>
+				<span class="desc">Intimidations, harcèlements, anti-feminisme, transphobie, homophobie, dick-pic etc.</span>
+			</a>
+			<a href="discover_mastodon.html" class="cards">
+				<h2>Découvrir Mastodon</h2>
+				<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 2048 2048"><path fill="currentColor" d="M1407 804q-35 19-67 41t-60 50v-16l-256-146l-256 146v290l256 146l98-56q0 5-1 10t-1 11q0 30 4 60t12 59l-112 64l-384-220V805l384-220l383 219zM256 586v876l579 330q-25 26-45 47t-35 55l-627-358V512L1024 0l896 512v291q-61-34-128-50V586l-768-439l-768 439zm1408 310q79 0 149 30t122 82t83 123t30 149q0 80-30 149t-82 122t-123 83t-149 30q-60 0-117-18t-105-53l-437 436q-19 19-45 19t-45-19t-19-45q0-26 19-45l436-437q-35-48-53-105t-18-117q0-79 30-149t82-122t122-83t150-30zm0 640q53 0 99-20t82-55t55-81t20-100q0-53-20-99t-55-82t-81-55t-100-20q-53 0-99 20t-82 55t-55 81t-20 100q0 53 20 99t55 82t81 55t100 20z"></path></svg></span>
+				<span class="desc">Publier, liker, repartager, épingler, message privé, qu'est-ce que le fediverse etc.</span>
+			</a>
+			<a href="progress.html" class="cards">
+				<h2>Trouver des contacts</h2>
+				<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 2048 2048"><path fill="currentColor" d="M2048 1484q0 54-20 102t-58 87l-370 369l-370-369q-38-38-58-86t-20-103q0-55 21-104t57-85t84-58t105-21q50 0 97 17t84 53q38-35 84-52t97-18q56 0 104 21t85 57t57 86t21 104zm-128 0q0-29-11-54t-30-45t-44-30t-55-11q-57 0-98 41l-82 82l-82-82q-20-20-45-30t-53-11q-29 0-54 11t-45 30t-30 44t-11 55q0 57 41 98l279 279l279-279q41-41 41-98zm-768-332q-87-65-181-96t-203-32q-134 0-251 49t-203 136t-136 204t-50 251H0q0-121 35-232t100-206t156-166t206-115q-55-34-99-82t-76-104t-49-119t-17-128q0-106 40-199t110-162T569 41T768 0q106 0 199 40t162 110t110 163t41 199q0 65-17 127t-48 119t-76 105t-100 82q66 23 121 58t109 82q-33 11-61 28t-56 39zm0-640q0-79-30-148t-83-122t-122-83t-149-31q-79 0-148 30t-122 83t-83 122t-31 149q0 79 30 148t83 122t122 83t149 31q79 0 148-30t122-83t83-122t31-149z"/></svg></span>
+				<span class="desc">Sur Mastoot.fr, sur d'autres serveurs, mes amis, ma famille, trouver des followers etc.</span>
+			</a>
+			<a href="progress.html" class="cards">
+				<h2>Administration et Modération</h2>
+				<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24"><path fill="currentColor" d="M17 17q.625 0 1.063-.438T18.5 15.5q0-.625-.438-1.063T17 14q-.625 0-1.063.438T15.5 15.5q0 .625.438 1.063T17 17Zm0 3q.775 0 1.425-.363t1.05-.962q-.55-.325-1.175-.5T17 18q-.675 0-1.3.175t-1.175.5q.4.6 1.05.963T17 20Zm-5 2q-3.475-.875-5.738-3.988T4 11.1V5l8-3l8 3v5.675q-.475-.2-.975-.363T18 10.075V6.4l-6-2.25L6 6.4v4.7q0 1.175.313 2.35t.875 2.238Q7.75 16.75 8.55 17.65t1.775 1.5q.275.8.725 1.525t1.025 1.3q-.025 0-.037.013T12 22Zm5 0q-2.075 0-3.538-1.463T12 17q0-2.075 1.463-3.538T17 12q2.075 0 3.538 1.463T22 17q0 2.075-1.463 3.538T17 22Zm-5-10.35Z"/></svg></span>
+				<span class="desc">Qui administre et qui modère, de quelle manière, comment rejoindre la modération ?</span>
+			</a>
+			<a href="https://fedidb.org/network/instance/mastoot.fr" target="new" class="cards">
+				<h2>On est combien ?</h2>
+				<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24"><g fill="none"><path stroke="currentColor" stroke-width="1.5" d="M14 4a2 2 0 1 1-4 0a2 2 0 0 1 4 0Z"/><path fill="currentColor" d="m6.048 10.849l.237-.712l-.237.712Zm2.175.725l-.237.712l.237-.712Zm.794 1.682l-.7-.27l.7.27ZM7.77 16.498l.7.269l-.7-.27Zm10.182-5.649l-.237-.712l.237.712Zm-2.175.725l.237.712l-.237-.712Zm-.794 1.682l.7-.27l-.7.27Zm1.247 3.242l-.7.269l.7-.27Zm-5.806 1.26l.651.372l-.65-.373ZM12 15l.651-.372a.75.75 0 0 0-1.302 0L12 15Zm5.146-7.103l-.157-.733l.157.733Zm-1.897.407l.157.733l-.157-.733Zm-6.498 0l.157-.734l-.157.734Zm-1.898-.407l-.157.733l.157-.733Zm6.723 9.86l-.651.372l.65-.372Zm1.462-9.409l-.152-.734l.152.734Zm-6.076 0l-.152.735l.152-.735Zm6.322 3.419l.394.638l-.394-.638Zm-.466.986l.743-.102l-.743.102Zm-6.102-.986l-.394.638l.394-.638Zm.466.986l.743.102l-.743-.102ZM5.81 11.56l2.175.726l.474-1.423l-2.175-.726l-.474 1.423Zm2.506 1.427L7.07 16.228l1.4.539l1.247-3.242l-1.4-.538Zm9.398-2.85l-2.175.726l.474 1.423l2.175-.726l-.474-1.423Zm-3.432 3.388l1.247 3.242l1.4-.539l-1.247-3.241l-1.4.538Zm-3.208 4.604l1.576-2.757l-1.302-.744l-1.576 2.757l1.302.744ZM16.99 7.165l-1.897.406l.314 1.467l1.898-.407l-.315-1.466Zm-8.08.406l-1.9-.407l-.314 1.466l1.898.407l.314-1.467Zm2.44 7.802l1.576 2.758l1.302-.745l-1.576-2.757l-1.302.744Zm3.743-7.802l-.206.044l.304 1.469l.216-.046l-.314-1.467ZM8.594 9.037l.216.046l.304-1.47l-.206-.043l-.314 1.467Zm6.293-1.423a14.25 14.25 0 0 1-5.773 0L8.81 9.083a15.75 15.75 0 0 0 6.38 0l-.303-1.47ZM9.145 19.25c.798 0 1.535-.428 1.93-1.12l-1.302-.745a.723.723 0 0 1-.628.365v1.5Zm6.385-2.483a.723.723 0 0 1-.675.983v1.5a2.223 2.223 0 0 0 2.075-3.022l-1.4.539Zm.01-5.904c-.222.074-.458.147-.65.265l.788 1.277c-.01.005-.002-.001.056-.023c.061-.023.143-.05.28-.096l-.474-1.423Zm.143 2.124a8.34 8.34 0 0 1-.104-.277c-.02-.059-.02-.069-.018-.059l-1.486.204c.03.223.124.452.208.67l1.4-.538Zm-.793-1.859a1.75 1.75 0 0 0-.815 1.727l1.486-.204a.25.25 0 0 1 .117-.246l-.788-1.277Zm3.36-1.733a.782.782 0 0 1-.535.742l.474 1.423a2.282 2.282 0 0 0 1.561-2.165h-1.5ZM7.07 16.228a2.223 2.223 0 0 0 2.075 3.022v-1.5a.723.723 0 0 1-.675-.983l-1.4-.539Zm.916-3.942c.137.045.219.073.28.096c.058.022.065.028.056.023l.788-1.277c-.192-.118-.428-.191-.65-.265l-.474 1.423Zm1.73 1.24c.085-.22.178-.448.209-.671l-1.486-.204c.001-.01.001 0-.018.059a8.41 8.41 0 0 1-.104.277l1.4.538Zm-1.394-1.121a.25.25 0 0 1 .117.246l1.486.204a1.75 1.75 0 0 0-.815-1.727l-.788 1.277ZM4.25 9.395c0 .983.629 1.855 1.56 2.165l.475-1.423a.782.782 0 0 1-.535-.742h-1.5Zm1.5 0c0-.498.46-.87.946-.765l.315-1.466A2.282 2.282 0 0 0 4.25 9.395h1.5Zm7.175 8.735a2.223 2.223 0 0 0 1.93 1.12v-1.5c-.26 0-.5-.14-.628-.365l-1.302.744Zm6.825-8.735a2.282 2.282 0 0 0-2.76-2.231l.314 1.466a.782.782 0 0 1 .946.765h1.5Z"/><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M19.454 14.5c1.583.796 2.546 1.848 2.546 3c0 2.485-4.477 4.5-10 4.5S2 19.985 2 17.5c0-1.152.963-2.204 2.546-3"/></g></svg></span>
+				<span class="desc">Sur Mastoot.fr, sur Mastodon, dans le fediverse etc.</span>
+			</a>
+			<a href="https://mastoot.fr/about" target="new" class="cards">
+				<h2>Ligne éditoriale et politique</h2>
+				<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 14 14"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M7 3.77A1.604 1.604 0 1 0 7 .564A1.604 1.604 0 0 0 7 3.77M1.959 6.979H12.04m-9.165 0l.459 6.416m7.791-6.416l-.459 6.416M7 8.59l.59 1.195l1.318.192l-.954.93l.225 1.313L7 11.6l-1.18.62l.226-1.313l-.954-.93l1.318-.192zM10 7a3 3 0 0 0-6 0"/></svg></span>
+				<span class="desc">Des règles claires, simples, que peut-on dire ou ne pas dire ? etc.</span>
+			</a>
+			<a href="https://mastoot.fr/donations.html" target="new" class="cards">
+				<h2>Soutenir Mastoot.fr</h2>
+				<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 256 256"><path fill="currentColor" d="M182 50.48V32a14 14 0 0 0-14-14H88a14 14 0 0 0-14 14v18.48A38.05 38.05 0 0 0 42 88v112a38 38 0 0 0 38 38h96a38 38 0 0 0 38-38V88a38.05 38.05 0 0 0-32-37.52M170 32v18h-20V30h18a2 2 0 0 1 2 2m-52 18V30h20v20ZM88 30h18v20H86V32a2 2 0 0 1 2-2m114 170a26 26 0 0 1-26 26H80a26 26 0 0 1-26-26V88a26 26 0 0 1 26-26h96a26 26 0 0 1 26 26Zm-44-40a22 22 0 0 1-22 22h-2v10a6 6 0 0 1-12 0v-10h-10a6 6 0 0 1 0-12h24a10 10 0 0 0 0-20h-16a22 22 0 0 1 0-44h2V96a6 6 0 0 1 12 0v10h10a6 6 0 0 1 0 12h-24a10 10 0 0 0 0 20h16a22 22 0 0 1 22 22"/></svg></span>
+				<span class="desc">Faire un don, contribuer, soutenir, combien ça coûte ? qui finance ? etc.</span>
+			</a>
+			<a href="progress.html" class="cards">
+				<h2>D'autres questions ou des idées ?</h2>
+				<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 384 512"><path fill="currentColor" d="m252.879 446.324l-94.223 25.247c-6.713 1.798-13.676-2.222-15.475-8.935c-1.798-6.712 2.222-13.676 8.934-15.474l94.223-25.247c6.713-1.798 13.676 2.221 15.475 8.934c1.8 6.713-2.222 13.676-8.934 15.475zm-43.626-289.558c-.844 11.486-7.341 17.96-17.428 17.796c-10.043-.162-17.352-7.045-17.111-17.526c.234-10.198 6.628-16.897 17.505-16.778c10.87.117 16.258 6.54 17.034 16.508zm120.795-38.71C292.565 56.148 218.325 26.069 149.354 46.22C88.995 63.856 49.64 103.71 35.33 165.003c-14.164 60.666 3.466 112.846 48.085 156.545c10.464 10.249 20.085 22.663 25.984 35.91c5.914 13.278 7.81 17.43 22.215 13.944c20.006-4.841 39.744-10.787 59.746-15.646c10.254-2.491 14.15-8.216 14.082-18.553c-.274-41.72-.182-83.443-.03-125.164c.033-9.444-2.935-17.22-13.096-17.456c-10.286-.239-13.435 7.277-13.349 16.905c.238 27.049.072 54.1.07 81.15c-.001 43.515 0 43.515-42.787 49.767c-16.266-18.638-31.078-35.392-45.653-52.351c-52.31-60.866-42.744-150.842 22.543-197.443c46.904-33.481 97.29-35.344 147.525-7.075c46.644 26.25 72.02 80.33 65.294 132.645c-4.493 34.948-21.181 62.845-45.933 86.826c-14.938 14.473-28.55 30.055-33.45 50.982c-2.292 9.788-7.78 14.643-17.262 16.98c1.772-1.647-102.202 27.486-102.202 27.486c-6.578 1.762-10.517 8.586-8.754 15.163l.271 1.017c1.763 6.577 8.586 10.517 15.164 8.755c0 0 119.3-32.058 120.864-32.501c11.048-3.05 17.061-10.915 17.313-22.141c.376-16.759 7.658-29.803 19.508-40.938c6.344-5.962 12.66-11.977 18.63-18.306c49.276-52.263 57.408-131.562 19.94-193.449z"/></svg></span>
+				<span class="desc">Des questions non abordés ici ? Des idées d'amélioration de Mastoot.fr ? etc.</span>
+			</a>
+		</div>
+		<p style="text-align: center";><small>By <a style="color: #5d4fe6;" href="https://mastoot.fr/@StefOfficiel" target="new">StefOfficiel</a> — Sous Licence CC0 1.0 — Code source de ce HelpCenter disponible sur <a style="color: #5d4fe6;" href="https://github.com/StefOfficiel/MastodonHelpCenter" target="new">GitHub</a>.</small></p>
+	</div>
+</body>
+</html>
