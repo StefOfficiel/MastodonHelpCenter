@@ -9,13 +9,15 @@ Utilisez nano en SSH ou téléchargez et éditez le fichier :
 
 En dessous de `<ColumnLink transparent to='/lists'` et au dessus de `<ListPanel />` j'ai ajouté ceci :
 
-``<div className='helpcenter_menu'>
+```
+<div className='helpcenter_menu'>
 	<a className='column-link column-link--transparent' title="Centre d'aide" href="/helpcenter/index.html" style={{
 		color: '#8c8dff',
 	}}>
 		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 14 14"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6.998.552a6.448 6.448 0 0 0-5.367 10.02L.55 13.447l3.62-.655A6.448 6.448 0 1 0 6.999.552Z"></path><path d="M5.51 5.512A1.488 1.488 0 1 1 6.998 7v.992M7 10.472a.248.248 0 0 1 0-.496m0 .496a.248.248 0 1 0 0-.496"></path></g></svg><span>Centre d'aide</span>
 	</a>
-</div>``
+</div>
+```
 
 Vous pouvez customisez comme bon vous semble.
 
